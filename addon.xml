@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.animeflv_kodi"
+       name="AnimeSubES"
+       version="2.9.3"
+       provider-name="AnimeSubES">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Anime sub español en 720p/1080p</summary>
+    <description lang="es">Ve anime en sub español desde AnimeFLV y JKAnime. Playlist automática estilo Otaku: click en cualquier episodio arranca la playlist completa desde ese punto. Historial por serie con "Continuar viendo". Caché TMDB persistente en disco.</description>
+    <disclaimer lang="es">Este addon realiza scraping de sitios públicos. Úsalo bajo tu propia responsabilidad.</disclaimer>
+    <platform>all</platform>
+    <license>GPL-3.0</license>
+    <news>
+v2.9.0 - Proxy m3u8 local para CDNs con SSL roto (cfglobalcdn.com/netu): Python descarga el m3u8 con ssl.CERT_NONE y lo escribe en special://temp/ para que Kodi lo lea sin pasar por SSL. Kodi 21: eliminado manifest_type deprecado. Player simplificado.
+v2.7.4 - inputstream.adaptive para HLS: el demuxer interno de Kodi falla con CDN tokenizados sin extension (.m3u8). inputstream.adaptive maneja redirects, CDN securizados y master playlists. Logging granular en _r_netu() (Fase1/Fase2) para diagnostico futuro. Si inputstream.adaptive no esta instalado, usa demuxer interno como fallback.
+v2.7.3 - _netu_resolve_cdn(): GET al CDN para extraer URL m3u8 real antes de pasarla a Kodi.
+v2.7.2 - MIME type HLS para CDN tokenizados (cfglobalcdn.com, /secip/). get_stream() devuelve (url, referer, mime).
+v2.7.1 - Velocidad: netu/ok.ru primero, TIMEOUT_FAST=4s, fallback SW limitado a 2 dominios.
+v2.7.0 - Scraper mejorado: Filemoon, FileLions, Speedfiles. StreamWish dominios activos 2025, fallback HTML con eval(atob()) decode.
+v2.6.1 - Fix crítico: episodios en orden ascendente (AnimeFLV los devuelve descendente).
+v2.6.0 - Playlist estilo Otaku: click en cualquier episodio arranca la playlist completa desde ese punto. Historial por serie con "Continuar viendo Ep X". Caché de lista de episodios en memoria. Caché TMDB en disco 7 días.
+v2.5.0 - Historial por serie (estilo Otaku). Caché TMDB en disco.
+v2.4.0 - Playlist corregida, orden ascendente.
+v2.3.0 - Reconstrucción completa.
+    </news>
+  </extension>
+
+</addon>
