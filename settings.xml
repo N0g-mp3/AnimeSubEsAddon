@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings version="2">
+    <section id="general">
+        <category id="general" label="30000">
+            <group id="1">
+                <setting id="tmdb_api_key" type="text">
+                    <level>0</level>
+                    <label>30001</label>
+                    <help>30002</help>
+                    <default>a3b51918b1fc7859bcc394873734473b</default>
+                    <constraints>
+                        <allowempty>true</allowempty>
+                    </constraints>
+                    <control type="edit">
+                        <heading>30001</heading>
+                    </control>
+                </setting>
+            </group>
+        </category>
+    </section>
+</settings>

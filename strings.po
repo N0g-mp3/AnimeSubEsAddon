@@ -1,0 +1,18 @@
+# Kodi Media Center language file
+# Addon Name: AnimeSubES
+# Addon id: plugin.video.animeflv_kodi
+# Addon Provider: AnimeSubES
+msgid ""
+msgstr ""
+
+msgctxt "#30000"
+msgid "General"
+msgstr "General"
+
+msgctxt "#30001"
+msgid "TMDB API key (opcional, gratis)"
+msgstr "API key de TMDB (opcional, gratis)"
+
+msgctxt "#30002"
+msgid "Usada para obtener la sinopsis e imagen de cada episodio desde TheMovieDB. Sin ella las sinopsis quedan vacías. Consigue una key gratis en themoviedb.org/settings/api"
+msgstr "Usada para obtener la sinopsis e imagen de cada episodio desde TheMovieDB. Sin ella las sinopsis quedan vacías. Consigue una key gratis en themoviedb.org/settings/api"
